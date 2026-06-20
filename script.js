@@ -1,5 +1,5 @@
 // !!! Apps Script 배포 후 얻은 웹 앱 URL을 아래에 반드시 입력하세요 !!!
-const SCRIPT_URL = "여기에_웹앱_URL을_붙여넣으세요";
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzroOVNoXI_K-aUDfZV5AXBMILOMs5nDbqQSMwmqSf7TJlV66dsVKRYXbHCeP9jykrV/exec";
 
 const quizData = [
     { question: "1. 다른 사람이 만든 창작물을 허락 없이 사용하는 것은?", options: ["초상권", "저작권", "재산권", "인격권"], answer: 1 },
