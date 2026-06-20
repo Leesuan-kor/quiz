@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.quiz-container {
+    background-color: #ffffff;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    padding: 30px;
+    text-align: center;
+}
+
+h1 {
+    color: #2c3e50;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 10px;
+}
+
+.question-info {
+    display: flex;
+    justify-content: space-between;
+    color: #718096;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#question {
+    font-size: 1.2rem;
+    color: #2d3748;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.option-btn {
+    background-color: #edf2f7;
+    border: 2px solid #edf2f7;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 1rem;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-align: left;
+}
+
+.option-btn:hover {
+    background-color: #e2e8f0;
+    border-color: #cbd5e0;
+}
+
+.option-btn.correct {
+    background-color: #c6f6d5;
+    border-color: #48bb78;
+    color: #22543d;
+}
+
+.option-btn.wrong {
+    background-color: #fed7d7;
+    border-color: #f56565;
+    color: #742a2a;
+}
+
+.option-btn:disabled {
+    cursor: not-allowed;
+}
+
+button#next-btn, button#restart-btn {
+    background-color: #4299e1;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    width: 100%;
+}
+
+button#next-btn:hover, button#restart-btn:hover {
+    background-color: #3182ce;
+}
+
+.hidden {
+    display: none !important;
+}
